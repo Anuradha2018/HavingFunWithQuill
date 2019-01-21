@@ -18,3 +18,7 @@ let quill = new Quill('#editor', {
     },
     theme:'snow'
 });
+$('#saveDelta').click(function() {
+    window.delta = quill.getContents();
+    
+})
